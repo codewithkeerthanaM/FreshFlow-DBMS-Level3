@@ -1,0 +1,1 @@
+const {build}=require("./crudRoutes");module.exports=build("locations");

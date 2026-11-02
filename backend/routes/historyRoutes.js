@@ -1,0 +1,2 @@
+const r=require("express").Router();const c=require("../controllers/historyController");const {authenticate}=require("../middleware/authMiddleware");
+r.get("/stock",authenticate,c.stock);r.get("/alerts",authenticate,c.alerts);r.get("/monitoring",authenticate,c.monitoring);module.exports=r;

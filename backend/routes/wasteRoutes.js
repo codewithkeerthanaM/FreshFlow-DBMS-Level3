@@ -1,0 +1,2 @@
+const r=require("express").Router();const c=require("../controllers/wasteController");const {authenticate}=require("../middleware/authMiddleware");const {allowRoles}=require("../middleware/roleMiddleware");
+r.get("/",authenticate,c.list);r.post("/",authenticate,allowRoles("ADMIN","MANAGER","STAFF"),c.create);module.exports=r;

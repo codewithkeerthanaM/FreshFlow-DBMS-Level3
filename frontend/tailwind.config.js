@@ -1,0 +1,1 @@
+module.exports = { content:["./src/**/*.{js,jsx}"], theme:{extend:{colors:{fresh:{50:"#effcf6",500:"#16a36a",600:"#108456",900:"#123b2d"}}}}, plugins:[] };

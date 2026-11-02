@@ -1,0 +1,2 @@
+const r=require("express").Router();const c=require("../controllers/alertController");const {authenticate}=require("../middleware/authMiddleware");const {allowRoles}=require("../middleware/roleMiddleware");
+r.get("/",authenticate,c.list);r.patch("/:id/status",authenticate,allowRoles("ADMIN","MANAGER","STAFF"),c.updateStatus);module.exports=r;

@@ -1,0 +1,1 @@
+import Workspace from "../../components/Workspace";export default function Layout({children}){return <Workspace title="FreshFlow workspace">{children}</Workspace>}

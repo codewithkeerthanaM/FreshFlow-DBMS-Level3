@@ -1,0 +1,1 @@
+import CrudPage from "../../../components/CrudPage";export default function Page(){return <CrudPage kind="suppliers"/>}
